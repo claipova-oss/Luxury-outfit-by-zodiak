@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --font-display: "Cinzel", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #06080d;
+    color: #e5e0d8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-cinzel {
+    font-family: var(--font-display);
+    letter-spacing: 0.05em;
+  }
+
+  .font-cormorant {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Celestial Glow and Metallic Shimmers */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f7e7b4 0%, #d4af37 50%, #aa822d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.22);
+}
+
+.bg-night-card {
+  background-color: rgba(14, 18, 27, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.bg-night-elevated {
+  background-color: rgba(20, 26, 38, 0.95);
+}
+
+/* Subtle Starfield background pattern */
+.celestial-grid-bg {
+  background-image: 
+    radial-gradient(1px 1px at 20px 30px, rgba(212, 175, 55, 0.4), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 80px 140px, rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 150px 70px, rgba(212, 175, 55, 0.3), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 220px 190px, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 310px 100px, rgba(212, 175, 55, 0.2), rgba(0, 0, 0, 0));
+  background-size: 360px 360px;
+}

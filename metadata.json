@@ -1,0 +1,6 @@
+{
+  "name": "Maison Zodiaque | Haute Couture Astrologique",
+  "description": "Aplikasi kurasi dan perancangan busana mewah haute couture berdasarkan rasi bintang, zodiak, dan kepribadian kosmis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
